@@ -3,7 +3,8 @@ $( document ).ready(function() {
     ga('send', 'event', {
       eventCategory: 'Outbound Link',
       eventAction: 'click',
-      eventLabel: url
+      eventLabel: url,
+      transport: 'beacon'
     });
   }
 
