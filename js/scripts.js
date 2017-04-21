@@ -1,11 +1,35 @@
 $( document ).ready(function() {
-  $( ".release-service" ).click(function() {
-    url = $(this).find(".release-service-button").attr("href")
+  function track_url(url) {
+    ga('send', 'event', {
+      eventCategory: 'Outbound Link',
+      eventAction: 'click',
+      eventLabel: url
+    });
+  }
+
+  function click_service_button(button) {
+    url = button.attr("href");
+    track_url(url);
     window.location = url;
+  }
+
+  function click_service_section(section) {
+    url = section.find(".release-service-button").attr("href");
+    track_url(url);
+    window.location = url;
+  }
+
+  function click_dont_know_section(section) {
+    url = section.find("a").attr("href");
+    track_url(url);
+    window.location = url;
+  }
+
+  $( ".release-service" ).click(function() {
+    click_service_section($(this));
   });
 
   $( ".release-service-dontknow" ).click(function() {
-    url = $(this).find("a").attr("href")
-    window.location = url;
+    click_dont_know_section($(this))
   });
 });
