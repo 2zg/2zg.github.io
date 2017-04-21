@@ -11,6 +11,11 @@ h1 {
   text-align: center;
 }
 
+.footer {
+  text-align: center;
+  color: white;
+}
+
 .release-content {
   background-color: white;
 }
@@ -85,4 +90,9 @@ h1 {
 .release-service-dontknow:hover {
   background-color: black;
   cursor: pointer;
+}
+
+/* Utilities */
+.top-buffer {
+  margin-top: 20px;
 }
