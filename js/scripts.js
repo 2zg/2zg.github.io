@@ -1,10 +1,8 @@
 $( document ).ready(function() {
   function track_url(url) {
-    ga('send', 'event', {
-      eventCategory: 'Outbound Link',
-      eventAction: 'click',
-      eventLabel: url,
-      transport: 'beacon'
+    ga('send', 'event', 'outbound', 'click', url, {
+      'transport': 'beacon',
+      'hitCallback': function(){document.location = url;}
     });
   }
 
