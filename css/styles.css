@@ -1,0 +1,88 @@
+body {
+  color: black;
+  background-image: url('../images/background.png');
+  font-family: 'Lato', 'Helvetica', 'sans-serif';
+  /*font-family: 'Mukta Vaani', 'Helvetica', 'sans-serif';*/
+  /*font-family: 'Roboto Slab', 'Helvetica', 'sans-serif';*/
+  margin-bottom: 0px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.release-content {
+  background-color: white;
+}
+
+.release-image {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.release-name {
+  background-color: black;
+  color: white;
+}
+
+.release-title-center {
+  position: relative;
+  top: 20%;
+  transform: translateY(-20%);
+  -webkit-transform: translateY(-20%);
+  -ms-transform: translateY(-20%);
+}
+
+/* release-service Section */
+.release-service {
+  background-color: white;
+  color: black;
+  line-height: 75px;
+}
+
+.release-service:hover {
+   background-color: #f5f5f5;
+   cursor: pointer;
+}
+
+.release-service-image {
+  height: 40px;
+}
+
+.release-service-button {
+  /*position: relative;
+  transform: translateY(50%);
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);*/
+  color: grey;
+  background-color: white;
+  border-color: grey;
+}
+
+.release-service-button:hover {
+  color: white;
+  background-color: black;
+  border-color: white;
+}
+
+/* release-service-dontknow section */
+
+.release-service-dontknow {
+  background-color: white;
+  color: black;
+  line-height: 75px;
+}
+
+.release-service-dontknow a {
+  color: grey;
+  text-decoration: none;
+}
+
+.release-service-dontknow:hover a {
+  color: white;
+}
+
+.release-service-dontknow:hover {
+  background-color: black;
+  cursor: pointer;
+}
