@@ -1,6 +1,6 @@
 body {
   color: black;
-  background-image: url('../images/background.png');
+  background-image: url("../../assets/img/background.png");
   font-family: 'Lato', 'Helvetica', 'sans-serif';
   /*font-family: 'Mukta Vaani', 'Helvetica', 'sans-serif';*/
   /*font-family: 'Roboto Slab', 'Helvetica', 'sans-serif';*/
