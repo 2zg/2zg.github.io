@@ -21,12 +21,12 @@ link_spotify_web: "https://open.spotify.com/album/1CX5fjCbWO5zzCbRK8FlCt"
       <div class="col-md-4 col-md-offset-4">
         <!-- RELEASE IMAGE -->
         <div class="row">
-          <img src="{{ page.root }}assets/img/releases/erde2.jpg" class="img-responsive release-image" alt="Erde 2">
+          <a href="{{page.link_spotify}}"><img src="{{ page.root }}assets/img/releases/erde2.jpg" class="img-responsive release-image" alt="Erde 2"></a>
         </div>
 
         <!-- RELEASE TITLE -->
         <div class="row release-name">
-          <h1 class="release-title-center">Tetsuo - Erde II</h1>
+          <h1 class="release-title-center"><a href="{{page.link_spotify}}" class="white-no-decoration">Tetsuo - Erde II</a></h1>
         </div>
 
         <!-- RELEASE SERVICES SECTION -->
@@ -54,7 +54,7 @@ link_spotify_web: "https://open.spotify.com/album/1CX5fjCbWO5zzCbRK8FlCt"
         <!-- Don't know button -->
         <div class="row release-service-dontknow">
           <div class="text-center">
-            <h3><a href="{{ page.link_spotify_web }}">Ich weiss es nicht</a></h3>
+            <h3 class="small-bottom-margin"><a href="{{ page.link_spotify_web }}">Ich weiss es nicht</a></h3>
           </div>
         </div>
 
