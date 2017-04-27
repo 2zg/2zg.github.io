@@ -31,4 +31,10 @@ $( document ).ready(function() {
   $( ".release-service-dontknow" ).click(function() {
     click_dont_know_section($(this))
   });
+
+  $(".external-link").click(function(){
+    url = $(this).attr("href")
+    track_url(url);
+    window.location = url;
+  });
 });
