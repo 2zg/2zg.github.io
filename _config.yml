@@ -24,7 +24,6 @@ github_username:  2zg
 
 # Build settings
 markdown: kramdown
-destination:  ../
 theme: minima
 gems:
   - jekyll-feed
