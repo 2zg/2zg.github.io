@@ -11,15 +11,21 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  text-align: center;
+  font-size: 1.3em;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.1em;
+}
+
 .footer {
   text-align: center;
   color: white;
   padding-top: 2em;
   padding-bottom: 0.5em;
-}
-
-.release-content {
-  background-color: white;
 }
 
 .release-image {
@@ -94,6 +100,13 @@ h1 {
   cursor: pointer;
 }
 
+.release-image-overview {
+  width: 250px;
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Utilities */
 .top-buffer {
   margin-top: 20px;
@@ -102,6 +115,7 @@ h1 {
 .white-no-decoration {
   color: white;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .white-no-decoration:visited {

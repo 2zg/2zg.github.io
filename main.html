@@ -1,0 +1,35 @@
+---
+layout: default
+title: 2 Zimmer Gefüge - Release Overview
+root: "../../"
+permalink: /main/
+release_names:
+  - { url: "erde2", artist: "Tetsuo", name: "Erde II [30.04.17]" }
+  - { url: "zuendkerze", artist: "2ZG & DJ Obsolete", name: "Zündkerze​/​Seeclub" }
+  - { url: "asket2", artist: "DerBenman", name: "L(e)'asket 2" }
+  - { url: "1993", artist: "Hentzup", name: "1993 EP" }
+  - { url: "chillstrumentals2", artist: "dEnk", name: "Chillstrumentals II" }
+  - { url: "pellagra", artist: "Onkel & dEnk", name: "Pellagra" }
+  - { url: "teichgesellschaft", artist: "Schwan", name: "Teichgesellschaft" }
+  - { url: "betonasphalt", artist: "Zetta & DerBenman", name: "Betonasphalt" }
+  - { url: "keats", artist: "dEnk & Drumtomski", name: "Tag ein, Tag aus" }
+  - { url: "hralp", artist: "High Risk Area", name: "HRA LP" }
+  - { url: "lifeisabitch", artist: "2ZG & Torti Tortsen", name: "Life's a bitch" }
+  - { url: "nischenkonstrukt", artist: "Bains", name: "Nischenkonstrukt" }
+  - { url: "karlheinzmeinrad", artist: "Zetta & Dreck", name: "Karl-Heinz-Meinrad" }
+  - { url: "aguadebeber", artist: "dEnk & DerRalle", name: "Agua de Beber" }
+  - { url: "asket", artist: "DerBenman", name: "L(e)'asket" }
+---
+<div class="container-fluid top-buffer">
+  <div class="row">
+    {% for release in page.release_names %}
+      <div class="col-md-3">
+        <a href="/{{release.url}}"><img src="{{ page.root }}assets/img/releases/{{release.url}}.jpg" class="img-responsive release-image-overview" alt="{{release.name}}"></a>
+        <div class="row"</div>
+          <h2><a href="/{{release.url}}" class="white-no-decoration">{{ release.name }}</a></h2>
+          <h3 class="small-bottom-margin"><a href="/{{release.url}}" class="white-no-decoration">{{ release.artist }}</a></h3>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
