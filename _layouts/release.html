@@ -26,24 +26,29 @@
               {% include release_pages/div_spotify.html %}
             {% endif %}
 
-            <!-- BANDCAMP SERVICE -->
-            {% if page.link_bandcamp != null %}
-              {% include release_pages/div_bandcamp.html %}
-            {% endif %}
-
             <!-- ITUNES SERVICE -->
             {% if page.link_itunes != null %}
               {% include release_pages/div_itunes.html %}
             {% endif %}
 
-            <!-- GOOGLE SERVICE -->
-            {% if page.link_google != null %}
-              {% include release_pages/div_google.html %}
+            <!-- BANDCAMP SERVICE -->
+            {% if page.link_bandcamp != null %}
+              {% include release_pages/div_bandcamp.html %}
+            {% endif %}
+
+            <!-- VINDIG SERVICE -->
+            {% if page.link_vindig != null %}
+              {% include release_pages/div_vindig.html %}
             {% endif %}
 
             <!-- AMAZON SERVICE -->
             {% if page.link_amazon != null %}
               {% include release_pages/div_amazon.html %}
+            {% endif %}
+
+            <!-- GOOGLE SERVICE -->
+            {% if page.link_google != null %}
+              {% include release_pages/div_google.html %}
             {% endif %}
 
             <!-- SOUNDCLOUD SERVICE -->
