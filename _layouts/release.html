@@ -21,6 +21,11 @@
 
             <!-- RELEASE SERVICES SECTION -->
 
+            <!-- BANDCAMP SERVICE -->
+            {% if page.link_bandcamp != null %}
+              {% include release_pages/div_bandcamp.html %}
+            {% endif %}
+
             <!-- SPOTIFY SERVICE -->
             {% if page.link_spotify != null %}
               {% include release_pages/div_spotify.html %}
@@ -29,11 +34,6 @@
             <!-- ITUNES SERVICE -->
             {% if page.link_itunes != null %}
               {% include release_pages/div_itunes.html %}
-            {% endif %}
-
-            <!-- BANDCAMP SERVICE -->
-            {% if page.link_bandcamp != null %}
-              {% include release_pages/div_bandcamp.html %}
             {% endif %}
 
             <!-- VINDIG SERVICE -->
