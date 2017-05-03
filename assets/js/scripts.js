@@ -1,4 +1,13 @@
 $( document ).ready(function() {
+
+  function main_shuffle_releases() {
+    var parent = $("#shuffle");
+    var divs = parent.children();
+    while (divs.length) {
+        parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+    }
+  }
+
   function track_url(url) {
     ga('send', 'event', 'outbound', 'click', url, {
       'transport': 'beacon',
@@ -37,4 +46,6 @@ $( document ).ready(function() {
     track_url(url);
     window.location = url;
   });
+
+  main_shuffle_releases();
 });
