@@ -25,7 +25,7 @@ release_names:
   <div class="row" id="shuffle">
     {% for release in page.release_names %}
       <div class="col-md-3 col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 big-bottom-margin">
-        <a href="/{{release.url}}"><img src="{{ page.root }}assets/img/releases/{{release.url}}.jpg" class="img-responsive release-image-overview" alt="{{release.name}}"></a>
+        <a href="/{{release.url}}/"><img src="{{ page.root }}assets/img/releases/{{release.url}}.jpg" class="img-responsive release-image-overview" alt="{{release.name}}"></a>
         <div class="row"</div>
           <h2><a href="/{{release.url}}" class="white-no-decoration">{{ release.name }}</a></h2>
           <h3 class="small-margin"><a href="/{{release.url}}" class="white-no-decoration">{{ release.artist }}</a></h3>
