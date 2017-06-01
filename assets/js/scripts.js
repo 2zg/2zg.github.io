@@ -27,7 +27,7 @@ $( document ).ready(function() {
     window.location = url;
   }
 
-  function click_dont_know_section(section) {
+  function click_details_section(section) {
     url = section.find("a").attr("href");
     track_url(url);
     window.location = url;
@@ -37,8 +37,12 @@ $( document ).ready(function() {
     click_service_section($(this));
   });
 
-  $( ".release-service-dontknow" ).click(function() {
-    click_dont_know_section($(this))
+  $( ".release-service-details" ).click(function() {
+    click_details_section($(this))
+  });
+
+  $( ".release-details-listen" ).click(function() {
+    click_details_section($(this))
   });
 
   $(".external-link").click(function(){

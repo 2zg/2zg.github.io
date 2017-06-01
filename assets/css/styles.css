@@ -39,6 +39,12 @@ h3 {
   color: white;
 }
 
+.release-name-details {
+  padding-top: 1.3em;
+  background-color: white;
+  color: black;
+}
+
 .release-title-center {
   position: relative;
   top: 20%;
@@ -84,24 +90,51 @@ h3 {
   border-color: white;
 }
 
-/* release-service-dontknow section */
+/* release-details-listen section */
+.release-details-listen {
+  background-color: black;
+  color: white;
+  line-height: 75px;
+}
 
-.release-service-dontknow {
+.release-details-listen a {
+  color: white;
+  text-decoration: none;
+}
+
+.release-details-listen:hover a {
+  color: black;
+}
+
+.release-details-listen:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+.release-details-video {
+  padding-top: 1.4em;
+  padding-bottom: 1.4em;
+  background-color: white;
+}
+
+/* release-service-details section */
+
+.release-service-details {
   background-color: white;
   color: black;
   line-height: 75px;
 }
 
-.release-service-dontknow a {
+.release-service-details a {
   color: grey;
   text-decoration: none;
 }
 
-.release-service-dontknow:hover a {
+.release-service-details:hover a {
   color: white;
 }
 
-.release-service-dontknow:hover {
+.release-service-details:hover {
   background-color: black;
   cursor: pointer;
 }
@@ -117,6 +150,25 @@ h3 {
 .top-buffer {
   margin-top: 20px;
 }
+
+.black-no-decoration {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.black-no-decoration:visited {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.black-no-decoration:hover {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
 .white-no-decoration {
   color: white;
@@ -151,4 +203,16 @@ h3 {
 .footer-button {
   margin-left: 2px;
   margin-right: 2px;
+}
+
+.press-text {
+  color: black;
+  background-color: white;
+  padding: 2em;
+  font-size: 1.3em;
+}
+
+.press-text p {
+  margin-top: 1.3em;
+  margin-bottom: 1.3em;
 }

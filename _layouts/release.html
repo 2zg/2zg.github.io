@@ -10,13 +10,13 @@
           <div class="col-md-4 col-md-offset-4 col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
             <!-- RELEASE IMAGE -->
             <div class="row">
-              <a href="{{page.link_dontknow}}" class="external-link"><img src="{{ page.root }}assets/img/releases/{{page.title_image_name}}" class="img-responsive release-image" alt="Erde 2"></a>
+              <a href="{{page.link_spotify}}" class="external-link"><img src="{{ page.root }}assets/img/releases/{{page.title_image_name}}" class="img-responsive release-image" alt="Erde 2"></a>
             </div>
 
             <!-- RELEASE TITLE -->
             <div class="row release-name">
-              <h1 class="release-title-center"><a href="{{page.link_dontknow}}" class="white-no-decoration external-link">{{page.album}}</a></h1>
-              <h3 class="release-title-center"><a href="{{page.link_dontknow}}" class="white-no-decoration external-link">{{page.artist}}</a></h3>
+              <h1 class="release-title-center"><a href="{{page.link_spotify}}" class="white-no-decoration external-link">{{page.album}}</a></h1>
+              <h3 class="release-title-center"><a href="{{page.link_spotify}}" class="white-no-decoration external-link">{{page.artist}}</a></h3>
             </div>
 
             <!-- RELEASE SERVICES SECTION -->
@@ -66,9 +66,9 @@
               {% include release_pages/div_youtube.html %}
             {% endif %}
 
-            <!-- Don't know button -->
-            {% if page.link_dontknow != null %}
-              {% include release_pages/div_dontknow.html %}
+            <!-- Details -->
+            {% if page.link_details != null %}
+              {% include release_pages/div_details.html %}
             {% endif %}
         </div>
 
