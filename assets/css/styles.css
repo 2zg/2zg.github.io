@@ -28,6 +28,17 @@ h3 {
   padding-bottom: 0.5em;
 }
 
+.footer-hr {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: white;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
 .release-image {
   margin-left: auto;
   margin-right: auto;
@@ -149,6 +160,10 @@ h3 {
 /* Utilities */
 .top-buffer {
   margin-top: 20px;
+}
+
+.top-buffer-large {
+  margin-top: 40px;
 }
 
 .black-no-decoration {
