@@ -21,6 +21,20 @@ h3 {
   font-size: 1.1em;
 }
 
+.nav-bar {
+  background-color: #141924;
+  border: 0px solid black;
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+}
+
 .footer {
   text-align: center;
   color: white;
