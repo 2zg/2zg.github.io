@@ -8,6 +8,13 @@ $( document ).ready(function() {
     }
   }
 
+  function setCopyright() {
+    var ele = $(".copyright");
+    var today = new Date();
+    var str = "&copy; 2 Zimmer Gefüge " + today.getFullYear();
+    ele.html(str);
+  }
+
   function track_url(url) {
     ga('send', 'event', 'outbound', 'click', url, {
       'transport': 'beacon',
@@ -52,4 +59,6 @@ $( document ).ready(function() {
   });
 
   main_shuffle_releases();
+  setCopyright();
+
 });
